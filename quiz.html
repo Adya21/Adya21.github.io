@@ -1,0 +1,140 @@
+<!doctype html> 
+<html>
+    <head>
+        <title>Quiz</title>
+       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+       
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <h1>Quiz</h1>
+ 1. Favourite Lana GIF
+        <div class="radio">
+  <label>
+    <input type="radio" name="q1" value="Born to Die Album">
+    <img
+         src="http://33.media.tumblr.com/6d071af8af78782bb3397ea7507aab97/tumblr_nd99bx56MB1t3nmj1o1_500.gif">
+  </label>
+</div> 
+        <div class="radio">
+  <label>
+    <input type="radio" name="q1" value="Ultraviolence Album">
+    <img
+         src="http://24.media.tumblr.com/44f7cb8072f45750384f8bd1bebf0dfb/tumblr_n66w0wLpyA1rr0bkio3_250.gif">
+  </label>
+        </div> 
+        
+        <div class="radio">
+  <label>
+    <input type="radio" name="q1" value="Honeymoon Album">
+   <img 
+        src="http://33.media.tumblr.com/9238ba2c2ac2e81720909f093adc52de/tumblr_ntg3u4IaG81rwijdco1_500.gif">
+  </label>
+        <div>2. Favorite song</div>
+         <label>
+    <input type="radio" name="q2" value="Born to Die Album">
+    Cola
+  </label>
+</div> 
+        <div class="radio">
+  <label>
+    <input type="radio" name="q2" value="Ultraviolence Album">
+    Brooklyn baby 
+  </label>
+        </div> 
+        
+        <div class="radio">
+  <label>
+    <input type="radio" name="q2" value="Honeymoon Album">
+  High by the beach
+  </label>
+            
+             <div>3. Favorite song again</div>
+         <label>
+    <input type="radio" name="q3" value="Born to Die Album">
+    Diet mountain dew
+  </label>
+</div> 
+        <div class="radio">
+  <label>
+    <input type="radio" name="q3" value="Ultraviolence Album">
+    Old money 
+  </label>
+        </div> 
+        
+        <div class="radio">
+  <label>
+    <input type="radio" name="q3" value="Honeymoon Album">
+  Art deco
+  </label>
+        
+    </div> 
+        
+        <div>4. Favorite Lyrics</div>
+         <label>
+    <input type="radio" name="q4" value="Born to Die Album">
+    The road is long, we carry on
+Try to have fun in the meantime
+  </label>
+</div> 
+        <div class="radio">
+  <label>
+    <input type="radio" name="q4" value="Ultraviolence Album">
+     I can hear violins, violins
+Give me all of that ultraviolence
+  </label>
+        </div> 
+        
+        <div class="radio">
+  <label>
+    <input type="radio" name="q4" value="Honeymoon Album">
+  We could cruise to the blues
+Wilshire Boulevard if we choose
+Or whatever you wanna do
+We make the rules
+  </label>
+        
+    </div> 
+        
+        
+        <button class="btn btn-primary">View Results</button>
+        <div class="alert alert-success hidden" role="alert">
+            You got <strong id="album"></strong>
+        </div>
+        </div>
+        <script>
+            $(function() { 
+            $('button').click(function() {
+              var count = {
+                  Born to die: 0,
+                  Ultraviolence: 0,
+                  Honeymoon: 0, 
+              }
+                
+                $(function() { 
+            $('button').click(function() {
+                
+                
+                var album  = $(':checked').val();
+               if  (album) {
+                   $('.alert').removeClass('hidden');
+                   $('#album').text(album);
+               }
+                
+                $('#album').text(album)   
+            });
+            });
+    
+    
+    
+    </script>
+    </body>
+</html>
