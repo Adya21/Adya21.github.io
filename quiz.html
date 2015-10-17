@@ -117,24 +117,18 @@ We make the rules
                   Born to die: 0,
                   Ultraviolence: 0,
                   Honeymoon: 0, 
-              }
-                
-                $(function() { 
-            $('button').click(function() {
+              };
                 
                 
-                var album  = $(':checked').val();
-               if  (album) {
-                   $('.alert').removeClass('hidden');
-                   $('#album').text(album);
-               }
+                $(':checked').each(function(i, el) {
+                    var album = $(el).val();
+                    count[album]++
+                });
                 
-                $('#album').text(album)   
+                alert(JSON.stringify(count)); 
+                });
             });
             });
-    
-    
-    
     </script>
     </body>
 </html>
