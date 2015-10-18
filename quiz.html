@@ -16,118 +16,124 @@
     <body>
     <div class="container">
         <h1>Quiz</h1>
- 1. Favourite Lana GIF
+ 
+        <div>1. Favourite Lana GIF</div>
         <div class="radio">
-  <label>
-    <input type="radio" name="q1" value="Born to Die Album">
-    <img
-         src="http://33.media.tumblr.com/6d071af8af78782bb3397ea7507aab97/tumblr_nd99bx56MB1t3nmj1o1_500.gif">
-  </label>
-</div> 
-        <div class="radio">
-  <label>
-    <input type="radio" name="q1" value="Ultraviolence Album">
-    <img
-         src="http://24.media.tumblr.com/44f7cb8072f45750384f8bd1bebf0dfb/tumblr_n66w0wLpyA1rr0bkio3_250.gif">
-  </label>
+        <label>
+            <input type="radio" name="q1" value="Born to Die Album">
+            <img
+                 src="http://33.media.tumblr.com/6d071af8af78782bb3397ea7507aab97/tumblr_nd99bx56MB1t3nmj1o1_500.gif">
+        </label>
         </div> 
-        
         <div class="radio">
-  <label>
-    <input type="radio" name="q1" value="Honeymoon Album">
-   <img 
-        src="http://33.media.tumblr.com/9238ba2c2ac2e81720909f093adc52de/tumblr_ntg3u4IaG81rwijdco1_500.gif">
-  </label>
-        <div>2. Favorite song</div>
-         <label>
-    <input type="radio" name="q2" value="Born to Die Album">
-    Cola
-  </label>
-</div> 
-        <div class="radio">
-  <label>
-    <input type="radio" name="q2" value="Ultraviolence Album">
-    Brooklyn baby 
-  </label>
+        <label>
+            <input type="radio" name="q1" value="UltraviolenceAlbum">
+            <img
+                src="http://24.media.tumblr.com/44f7cb8072f45750384f8bd1bebf0dfb/tumblr_n66w0wLpyA1rr0bkio3_250.gif">
+        </label>
         </div> 
-        
         <div class="radio">
-  <label>
-    <input type="radio" name="q2" value="Honeymoon Album">
-  High by the beach
-  </label>
+        <label>
+            <input type="radio" name="q1" value="HoneymoonAlbum">
+            <img 
+                src="http://33.media.tumblr.com/9238ba2c2ac2e81720909f093adc52de/tumblr_ntg3u4IaG81rwijdco1_500.gif">
+        </label>
+        </div>
+        
+            <div>2. Favorite song</div>
+            <div class="radio">
+            <label>
+                <input type="radio" name="q2" value="Born to Die Album">
+                Cola
+            </label>
+            </div> 
+            <div class="radio">
+            <label>
+                <input type="radio" name="q2" value="UltraviolenceAlbum">
+                Brooklyn baby 
+            </label>
+            </div> 
+            <div class="radio">
+            <label>
+                <input type="radio" name="q2" value="HoneymoonAlbum">
+                High by the beach
+            </label>
+            </div>
             
-             <div>3. Favorite song again</div>
-         <label>
-    <input type="radio" name="q3" value="Born to Die Album">
-    Diet mountain dew
-  </label>
-</div> 
+        <div>3. Favorite song again</div>
         <div class="radio">
-  <label>
-    <input type="radio" name="q3" value="Ultraviolence Album">
-    Old money 
-  </label>
+        <label>
+            <input type="radio" name="q3" value="Born to Die Album">
+            Diet mountain dew
+        </label>
         </div> 
-        
         <div class="radio">
-  <label>
-    <input type="radio" name="q3" value="Honeymoon Album">
-  Art deco
-  </label>
-        
-    </div> 
+        <label>
+            <input type="radio" name="q3" value="UltraviolenceAlbum">
+            Old money 
+        </label>
+        </div> 
+        <div class="radio">
+        <label>
+            <input type="radio" name="q3" value="HoneymoonAlbum">
+            Art deco
+        </label>
+        </div> 
         
         <div>4. Favorite Lyrics</div>
          <label>
-    <input type="radio" name="q4" value="Born to Die Album">
-    The road is long, we carry on
-Try to have fun in the meantime
-  </label>
-</div> 
+            <input type="radio" name="q4" value="Born to Die Album">
+            The road is long, we carry on, Try to have fun in the meantime
+        </label>
         <div class="radio">
-  <label>
-    <input type="radio" name="q4" value="Ultraviolence Album">
-     I can hear violins, violins
-Give me all of that ultraviolence
-  </label>
+        <label>
+            <input type="radio" name="q4" value="UltraviolenceAlbum">
+            I can hear violins, violins, Give me all of that ultraviolence
+        </label>
+        </div> 
+        <div class="radio">
+        <label>
+            <input type="radio" name="q4" value="HoneymoonAlbum">
+            We could cruise to the blues, Wilshire Boulevard if we choose, Or whatever you wanna do, We make the rules
+        </label>  
         </div> 
         
-        <div class="radio">
-  <label>
-    <input type="radio" name="q4" value="Honeymoon Album">
-  We could cruise to the blues
-Wilshire Boulevard if we choose
-Or whatever you wanna do
-We make the rules
-  </label>
-        
-    </div> 
-        
-        
-        <button class="btn btn-primary">View Results</button>
-        <div class="alert alert-success hidden" role="alert">
-            You got <strong id="album"></strong>
+        <div class="results">
+            <div>
+                <button class="btn btn-primary">View Results</button>
+                
+                <div class="alert alert-success hidden" role="alert">
+                    You got <strong id="result"></strong>
+                </div>
+            </div>
         </div>
-        </div>
+    </div>
         <script>
             $(function() { 
-            $('button').click(function() {
-              var count = {
-                  Born to die: 0,
-                  Ultraviolence: 0,
-                  Honeymoon: 0, 
-              };
+                $('button').click(function() {
+                    var count = {
+                        'Born to die Album': 0,
+                         UltraviolenceAlbum: 0,
+                         HoneymoonAlbum: 0, 
+                    };
                 
                 
-                $(':checked').each(function(i, el) {
-                    var album = $(el).val();
-                    count[album]++
+                    $(':checked').each(function(i, el) {
+                        var album = $(el).val();
+                        count[album]++;
+                    });
+                    var max= 0;
+                    var result = '';
+                    for (var key in count) {
+                       if (count[key] > max) {
+                           max= count[key];
+                           result = key;
+                       }
+                    }
+                    $('#result').text(result);
+                    $('.alert').removeClass('hidden');
+                  
                 });
-                
-                alert(JSON.stringify(count)); 
-                });
-            });
             });
     </script>
     </body>
